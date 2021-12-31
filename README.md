@@ -27,7 +27,7 @@ emoji for tui.editor
 ### step 2: add javascript library
 ```html
 <script src="https://uicdn.toast.com/editor/3.1.2/toastui-editor-all.min.js"></script>
-<script src="https://erzh.github.io/tui.editor-emoji/tui.editor-emoji.js"></script>
+<script src="https://erzh.github.io/tui.editor-emoji/lib/tui.editor-emoji.js"></script>
 ```
 
 ### step 3: use emoji for tui.editor
