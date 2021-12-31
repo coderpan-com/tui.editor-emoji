@@ -2,7 +2,7 @@
 
 emoji for tui.editor
 
-[Demo link is here.](https://erzh.github.io/tui.editor-emoji/)
+[Demo link is here.](https://erzh.github.io/tui.editor-emoji/demo.html)
 
 ![screenshot](screenshot.png)
 
