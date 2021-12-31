@@ -2,6 +2,8 @@
 
 emoji for tui.editor
 
+[Demo link is here.](https://erzh.github.io/tui.editor-emoji/)
+
 ![screenshot](screenshot.png)
 
 ## usage
@@ -47,3 +49,5 @@ emoji for tui.editor
 
 ### reference
 emoji code from: https://unicode.org/emoji/charts/full-emoji-list.html
+
+[https://erzh.github.io/tui.editor-emoji/]: https://erzh.github.io/tui.editor-emoji/
