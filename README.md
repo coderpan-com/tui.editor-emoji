@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+# ToastUI Editor Emoji
 
-You can use the [editor on GitHub](https://github.com/erzh/tui.editor-emoji/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+emoji for tui.editor
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![screenshot](screenshot.png)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## usage
+### step 1: add style
+```html
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/3.2.1/toastui-editor.css" />
+<style>
+.editor-emoji-popup span {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    line-height: 1;
+    width: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+</style>
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### step 2: add javascript library
+```html
+<script src="https://uicdn.toast.com/editor/3.1.2/toastui-editor-all.min.js"></script>
+<script src="https://erzh.github.io/tui.editor-emoji/tui.editor-emoji.js"></script>
+```
 
-### Jekyll Themes
+### step 3: use emoji for tui.editor
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/erzh/tui.editor-emoji/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```html
+<div id="editor"></div>
+<script>
+    const editor = new toastui.Editor({
+        el: document.querySelector('#editor'),
+        previewStyle: 'vertical',
+        toolbarItems: [
+            ['heading', 'bold', 'italic', 'strike']
+        ],
+        height: '500px',
+    });
+    // use emoji for tui.editor
+    useTuiEditorEmoji(editor)
+</script>
+```
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### reference
+emoji code from: https://unicode.org/emoji/charts/full-emoji-list.html
